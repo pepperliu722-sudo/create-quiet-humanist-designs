@@ -1,0 +1,4 @@
+interface:
+  display_name: "Artistic Humanist Design"
+  short_description: "Create authored, handmade editorial visuals."
+  default_prompt: "Use $create-quiet-humanist-designs to turn this content and its visual references into a finished artistic editorial design with non-template composition and exact typography."
