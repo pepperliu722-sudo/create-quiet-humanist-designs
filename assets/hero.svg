@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Create Quiet Humanist Designs</title>
+  <desc id="desc">A hand pulls a red thread through rigid cards, turning them into distinctive handmade visual forms.</desc>
+  <defs>
+    <filter id="paper" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.7" numOctaves="3" seed="11" result="noise"/>
+      <feColorMatrix in="noise" type="saturate" values="0" result="gray"/>
+      <feComponentTransfer in="gray" result="faint"><feFuncA type="table" tableValues="0 .09"/></feComponentTransfer>
+      <feBlend in="SourceGraphic" in2="faint" mode="multiply"/>
+    </filter>
+    <filter id="rough" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.015 0.06" numOctaves="2" seed="4" result="warp"/>
+      <feDisplacementMap in="SourceGraphic" in2="warp" scale="2.5"/>
+    </filter>
+    <pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="4" cy="4" r="2.8" fill="#191817" opacity=".72"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="900" fill="#f1eadc"/>
+  <g filter="url(#paper)">
+    <rect width="1600" height="900" fill="#f1eadc"/>
+
+    <text x="90" y="92" fill="#191817" font-family="Arial, Helvetica, sans-serif" font-size="20" letter-spacing="5">AN AGENT SKILL FOR AUTHORED VISUALS</text>
+    <text x="84" y="220" fill="#191817" font-family="Arial Black, Arial, Helvetica, sans-serif" font-size="112" letter-spacing="-4">QUIET</text>
+    <text x="82" y="328" fill="#3157b7" font-family="Georgia, Times New Roman, serif" font-size="116" font-style="italic" letter-spacing="-5">humanist</text>
+    <text x="88" y="423" fill="#191817" font-family="Arial Black, Arial, Helvetica, sans-serif" font-size="98" letter-spacing="1">DESIGNS</text>
+
+    <path d="M92 472 C240 459 330 488 472 470" fill="none" stroke="#d34a2f" stroke-width="8" stroke-linecap="round" filter="url(#rough)"/>
+    <text x="92" y="530" fill="#191817" font-family="Georgia, Times New Roman, serif" font-size="31">Turn meaning into a visual with a pulse.</text>
+    <text x="94" y="575" fill="#191817" font-family="Courier New, monospace" font-size="20" letter-spacing="1">CONTENT → ANCHOR → ACTION → TRACE → FINISHED ARTIFACT</text>
+
+    <!-- hand pulling the thread -->
+    <g transform="translate(52 620) rotate(-4)" fill="none" stroke="#191817" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" filter="url(#rough)">
+      <path d="M0 94 C68 80 113 64 164 32 C183 20 198 35 185 52 L150 79"/>
+      <path d="M150 79 L202 42 C220 29 237 46 220 62 L177 95"/>
+      <path d="M177 95 L230 67 C251 56 262 77 241 91 L192 119"/>
+      <path d="M192 119 L235 111 C259 107 266 132 242 139 L177 157 C140 168 102 159 72 145 L0 143"/>
+      <path d="M123 91 C142 103 158 115 177 126"/>
+    </g>
+
+    <!-- red thread disrupts the grid and makes different artifacts -->
+    <path d="M245 720 C402 636 521 706 658 648 S883 520 1015 592 S1228 714 1526 598" fill="none" stroke="#d34a2f" stroke-width="7" stroke-linecap="round" filter="url(#rough)"/>
+
+    <!-- rigid card -->
+    <g transform="translate(565 560) rotate(-8)" filter="url(#rough)">
+      <rect x="0" y="0" width="196" height="250" fill="#f7f1e6" stroke="#191817" stroke-width="4"/>
+      <g stroke="#191817" stroke-width="2" opacity=".7">
+        <path d="M28 38 H168 M28 72 H168 M28 106 H168 M28 140 H168 M28 174 H168 M28 208 H168"/>
+        <path d="M66 24 V224 M116 24 V224"/>
+      </g>
+      <circle cx="99" cy="124" r="11" fill="#d34a2f"/>
+    </g>
+
+    <!-- poster card -->
+    <g transform="translate(814 435) rotate(5)" filter="url(#rough)">
+      <path d="M10 15 L220 0 L242 292 L0 306 Z" fill="#efb7b1" stroke="#191817" stroke-width="4"/>
+      <path d="M45 73 C93 30 150 44 178 91 C195 120 183 162 152 180 C115 201 65 185 45 151 C29 124 27 91 45 73 Z" fill="#83915b"/>
+      <path d="M55 231 C92 200 126 219 146 251" fill="none" stroke="#191817" stroke-width="7"/>
+      <path d="M143 251 C163 215 199 212 217 239" fill="none" stroke="#191817" stroke-width="7"/>
+      <text x="29" y="42" fill="#191817" font-family="Arial, Helvetica, sans-serif" font-size="18" letter-spacing="3">POSTER / 01</text>
+      <text x="29" y="280" fill="#191817" font-family="Georgia, serif" font-size="24" font-style="italic">one exact idea</text>
+    </g>
+
+    <!-- slide card -->
+    <g transform="translate(1094 506) rotate(-3)" filter="url(#rough)">
+      <rect x="0" y="0" width="267" height="174" rx="2" fill="#3157b7" stroke="#191817" stroke-width="4"/>
+      <circle cx="195" cy="81" r="48" fill="#e8b927"/>
+      <path d="M23 121 C67 86 91 94 125 58 C137 46 147 30 150 18" fill="none" stroke="#f1eadc" stroke-width="5"/>
+      <text x="22" y="34" fill="#f1eadc" font-family="Courier New, monospace" font-size="16" letter-spacing="2">SLIDE / 02</text>
+      <text x="22" y="151" fill="#f1eadc" font-family="Georgia, serif" font-size="22">type joins the image</text>
+    </g>
+
+    <!-- email/web card -->
+    <g transform="translate(1370 440) rotate(7)" filter="url(#rough)">
+      <path d="M0 12 L158 0 L176 226 L14 240 Z" fill="#f7f1e6" stroke="#191817" stroke-width="4"/>
+      <rect x="31" y="37" width="116" height="70" fill="url(#dots)"/>
+      <path d="M38 143 H137 M38 165 H119 M38 187 H146" stroke="#191817" stroke-width="5" stroke-linecap="round"/>
+      <circle cx="28" cy="18" r="10" fill="#e8b927"/>
+    </g>
+
+    <!-- authored marks -->
+    <path d="M1500 760 q28 -35 51 0 q-22 30 -51 0" fill="none" stroke="#3157b7" stroke-width="5" filter="url(#rough)"/>
+    <path d="M1484 804 l68 -14" stroke="#d34a2f" stroke-width="7" stroke-linecap="round" filter="url(#rough)"/>
+    <text x="1275" y="842" fill="#191817" font-family="Courier New, monospace" font-size="18" letter-spacing="2">NO TEMPLATE. NO DECORATIVE ALIBI.</text>
+  </g>
+</svg>
